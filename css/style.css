@@ -18,7 +18,7 @@ img {
 }
 
 body {
-	font-family: 'font', sans-serif;
+	font-family: Arial, Verdana, sans-serif;
 }
 .main-content {
   display: flex;
@@ -35,10 +35,23 @@ body {
 }
 .links {
   margin-bottom: 50px;
+
 }
 .link {
   display: inline-block;
   padding: 24px 49px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #3f2aff;
+}
+.link_download {
+  font-weight: 700;
+  font-size: 18px;
+  color: #3f2aff;
+  background-image: url("../img/download.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding-left: 30px;
 }
 .link:not(:last-child) {
   margin-right: 25px;
@@ -53,25 +66,58 @@ body {
 .main-title {
   margin-top: 0;
   margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #333;
 }
 .h2-title {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 46px;
+  color: #333;
 }
 .h3-title {
   margin-top: 0px;
   margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #333;
 }
 .text {
   margin-top: 0px;
   margin-bottom: 40px;
   width: 872px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333;
+}
+.blue-box {
+  margin-top: 0px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 50px 95px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  background-color: #3f2aff;
 }
 .gray-box {
   margin-top: 0px;
   border-radius: 20px;
   padding: 30px;
   background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.first-gray-box {
+  background-image: url("../img/decorate-1.png");
+}
+.second-gray-box {
+  background-image: url("../img/decorate-2.png");
 }
 .gray-box:not(:last-child){
   margin-bottom: 40px;
@@ -81,12 +127,20 @@ body {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+.gray-box a {
+  border-bottom: 1px solid #3f2aff;
+  font-size: 20px;
+  color: #3f2aff;
+}
 .lists {
   margin-top: 0;
   padding-left: 15px;
 }
 .lists-puncts {
   margin-top: 0;
+}
+::marker {
+  color: #3f2aff;
 }
 .lists-puncts:not(:last-child) {
   margin-bottom: 20px;
@@ -96,9 +150,19 @@ img:not(.img-in-fig img) {
   margin-bottom: 40px;
 }
 .img-in-fig {
-
   display: inline-block;
   margin: 0 0 40px;
   width: 872px;
+  font-size: 0;
+}
+figcaption {
+  padding: 19px 0 ;
+  border: 1px;
+  border-style:solid;
+  border-top: none;
+  border-color: #b6b6b6;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
 }
 
